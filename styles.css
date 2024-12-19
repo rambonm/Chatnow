@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.login-box, .chat-container {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-box i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.chat-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+.received, .sent {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.received {
+    background-color: #d1ecf1;
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: #c3e6cb;
+    align-self: flex-end;
+}
+
+.send-box {
+    display: flex;
+    margin-top: 10px;
+}
+
+.send-box input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.send-box button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}

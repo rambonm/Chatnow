@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h2>Chat</h2>
+            <a href="index.html" class="logout-btn">Logout</a>
+        </header>
+        <div class="chat-box">
+            <div class="message">
+                <p class="received">Hello! How are you?</p>
+                <p class="sent">I'm good, thank you!</p>
+            </div>
+        </div>
+        <div class="send-box">
+            <input type="text" id="messageInput" placeholder="Type a message...">
+            <button onclick="sendMessage()"><i class="bx bx-send"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
